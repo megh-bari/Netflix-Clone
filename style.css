@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/Images/bg.jpg");
+  height: 700px;
+  position: relative;
+  background-size: max(1200px, 100vw);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  height: 700px;
+  width: 100%;
+  opacity: 0.74;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  position: relative;
+  top: 10px;
+}
+
+nav img {
+  color: red;
+  width: 148px;
+  position: relative;
+  z-index: 10;
+  top: 6px;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(35, 35, 35);
+  position: relative;
+  bottom: 3px;
+  z-index: 20;
+}
+
+.btn {
+  padding: 8px 12px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(175, 175, 175, 0.6);
+}
+
+.btn-red {
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  letter-spacing: normal;
+  /* line-height: 3; */
+  cursor: pointer;
+  width: 450px;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.hero input {
+  height: 65%;
+  width: 120%;
+  font-size: 1rem;
+  border-radius: 4px;
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+  border: 1px solid rgba(175, 175, 175, 0.6);
+  line-height: 1.5;
+  padding: 10px 20px;
+  caret-color: white;
+  color: white;
+}
+
+.hero input::placeholder {
+  font-size: 16px; /* Adjust placeholder font size */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-img {
+  position: relative;
+}
+
+.sec-img img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.sec-img video {
+  position: absolute;
+  top: 108px;
+  right: 50px;
+  width: 430px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 20px;
+}
+
+section.third .sec-img video {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  width: 350px;
+}
+
+.faq h2 {
+  color: white;
+  text-align: center;
+  margin: 25px;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.faq-box {
+  display: flex; /* Use flexbox to control layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Distribute items with space around them */
+  background-color: rgb(35, 35, 35);
+  padding: 24px;
+  color: white;
+  max-width: 75%;
+  margin: 8px auto;
+  font-size: 24px;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.ques {
+  display: flex;
+  justify-content: space-between; /* Spread items apart */
+  align-items: center;
+  width: 100%; /* Ensure full width */
+}
+
+.toggle-icon {
+  width: 36px;
+  height: 36px;
+  fill: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 20px; /* Add margin between icon and text */
+}
+
+
+.toggle-icon.plus {
+  transform: rotate(0deg);
+}
+
+.toggle-icon.cross {
+  transform: rotate(45deg);
+} 
+
+
+.answer {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 10s cubic-bezier(1, -0.03, 0.52, 0.21);/* Adjusted duration and easing */
+}
+
+.answer.show {
+  display: block;
+  opacity: 1;
+  max-height: 1000px; /* Adjust as necessary */
+}
+
+
+
+.faq-box:hover {
+  background-color: rgba(150, 148, 148, 0.4);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+p {
+  margin: 24px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero-2 {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.hero-2 input {
+  height: 65%;
+  width: 120%;
+  font-size: 1rem;
+  border-radius: 4px;
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+  border: 1px solid rgba(175, 175, 175, 0.6);
+  line-height: 1.5;
+  padding: 18px 20px;
+  caret-color: white;
+  color: white;
+}
+
+.hero-2 input::placeholder {
+  font-size: 16px; /* Adjust placeholder font size */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 80vw;
+  margin: auto;
+  padding: 50px;
+}
+
+footer .questions {
+  padding: 34px 0;
+  font-size: 14px;
+}
+
+.questions a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer a {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.language-select {
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  font-size: 14px;
+  margin-right: 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.language-select option {
+  background-color: white;
+  color: black;
+}
+
+.top {
+  margin-top: 30px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.language-icon {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.group {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+
+.input-group-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Responsive Design */
+
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+  .main {
+    height: 700px;
+    position: relative;
+    background-size: max(1350px, 100vw);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .first {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 140px;
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .first > div {
+    flex: 1;
+  }
+
+  .sec-img img {
+    z-index: 51;
+    position: absolute;
+    top: -140px;
+    right: -50px;
+    width: 400px;
+  }
+
+  .sec-img video {
+    position: absolute;
+    top: -80px;
+    right: -3px;
+    width: 300px;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .second > div > span:first-child {
+    font-size: 40px;
+    white-space: normal;
+  }
+
+  .second > .sec-img img {
+    z-index: 51;
+    position: absolute;
+    top: -140px;
+    right: 150px;
+    width: 400px;
+  }
+
+  .second > .sec-img video {
+    position: absolute;
+    top: -80px;
+    right: -3px;
+    width: 300px;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .third > .sec-img img {
+    z-index: 51;
+    position: absolute;
+    top: -100px;
+    right: -110px;
+    width: 400px;
+  }
+
+  section.third .sec-img video {
+    position: absolute;
+    top: -80px;
+    right: -30px;
+    width: 250px;
+  }
+
+  .fourth > .sec-img img {
+    z-index: 51;
+    position: absolute;
+    top: -100px;
+    right: 120px;
+    width: 380px;
+  }
+  section.fourth {
+    position: relative;
+    left: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    height: 700px;
+    position: relative;
+    background-size: max(1350px, 90vw);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .first {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 140px;
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .group {
+    text-align: center;
+  }
+
+  section.second > .sec-img {
+    position: relative;
+    left: 100px;
+  }
+
+  section.fourth > .sec-img {
+    position: relative;
+    right: 0;
+  }
+  .section.first > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .first {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 140px;
+    width: 80vw;
+    height: 70vh;
+  }
+  section.second > .sec-img {
+    position: relative;
+    left: 30%;
+  }
+  section.second > div {
+    position: relative;
+    left: 15%;
+  }
+
+  section.fourth > .sec-img {
+    position: relative;
+    right: -10%;
+  }
+
+  section.third > .sec-img {
+    position: relative;
+    left: 10%;
+  }
+  section.third {
+    position: relative;
+    left: -5%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav img {
+    width: 120px;
+  }
+  .hero > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .hero > :nth-child(2) {
+    font-size: 1.25rem;
+  }
+  .hero > :nth-child(3) {
+    font-size: 1rem;
+  }
+  .btn-red {
+    font-size: 1.25rem;
+  }
+  .faq-box {
+    max-width: 90%;
+  }
+  footer {
+    padding: 20px;
+  }
+}
