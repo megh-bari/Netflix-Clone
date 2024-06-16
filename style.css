@@ -243,22 +243,20 @@ section.third .sec-img video {
   margin-right: 20px; /* Add margin between icon and text */
 }
 
-
 .toggle-icon.plus {
   transform: rotate(0deg);
 }
 
 .toggle-icon.cross {
   transform: rotate(45deg);
-} 
-
+}
 
 .answer {
   display: none;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 10s cubic-bezier(1, -0.03, 0.52, 0.21);/* Adjusted duration and easing */
+  transition: max-height 10s cubic-bezier(1, -0.03, 0.52, 0.21); /* Adjusted duration and easing */
 }
 
 .answer.show {
@@ -266,8 +264,6 @@ section.third .sec-img video {
   opacity: 1;
   max-height: 1000px; /* Adjust as necessary */
 }
-
-
 
 .faq-box:hover {
   background-color: rgba(150, 148, 148, 0.4);
@@ -581,25 +577,166 @@ footer .questions {
 }
 
 @media (max-width: 480px) {
-  nav img {
-    width: 120px;
+  .main {
+    background-image: url(assets/Images/bg.jpg);
+    height: 500px;
+    position: relative;
+    background-size: max(900px);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
   }
   .hero > :nth-child(1) {
-    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
   }
+
   .hero > :nth-child(2) {
-    font-size: 1.25rem;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
   }
+
   .hero > :nth-child(3) {
-    font-size: 1rem;
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .input-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .hero input {
+    width: 60%;
+    height: 30%;
+  }
+  .select-wrapper {
+    max-width: 120px;
   }
   .btn-red {
-    font-size: 1.25rem;
+    width: 100px;
+    font-size: 10px;
+    line-height: 2;
   }
-  .faq-box {
-    max-width: 90%;
+  .nav-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    /* top: 30px; */
+    gap: 10px;
   }
-  footer {
-    padding: 20px;
+
+  nav {
+    max-width: 95vw;
+  }
+  .first {
+    height: 80vh;
+    position: relative;
+    left: -8%;
+  }
+
+  section.first > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    /* margin-top: -300px; */
+    left: 80px;
+  }
+
+  section.first > div {
+    font-size: 40px;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+  section.first > div:first-child {
+    position: absolute;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .sec-img img {
+    z-index: 51;
+    position: absolute;
+    top: -30px;
+    right: -85px;
+    width: 350px;
+  }
+
+  .sec-img video {
+    position: absolute;
+    top: 24px;
+    right: -35px;
+    width: 255px;
+  }
+
+  .hero-2 .input {
+    width: 70%;
+    height: 0vh;
+  }
+
+  .input-group-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+  }
+  section.second{
+    height: 100vh;
+    
+  }
+  section.second > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    margin-top: -300px;
+    left: 70px;
+  }
+
+  .second > .sec-img img {
+    position: relative;
+    top: 350px;
+    left: -100px;
+    width: 400px;
+    z-index: 10;
+  }
+
+  /* footer responsive design for 430px */
+  .footer {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: self-start;
+    align-self: self-start;
   }
 }
