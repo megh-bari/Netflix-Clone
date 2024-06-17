@@ -3,6 +3,7 @@
 Welcome to the Netflix Clone project! This is a simple web application created using HTML and CSS to replicate the basic user interface of the Netflix homepage. This project is meant for educational purposes and serves as a hands-on exercise in web development.
 
 ## Preview
+## Preview: https://megh-bari.github.io/Netflix-Clone/
 ![Netflix Pg-1](https://github.com/megh-bari/Netflix-Clone/assets/142393952/58ae9bce-53cb-47bb-a4d9-bffe9cf70442)
 ![Netflix Pg -2](https://github.com/megh-bari/Netflix-Clone/assets/142393952/0b77c63d-bd9d-41b2-a776-31f8ec2c03fb)
 ![Netflix Pg-3](https://github.com/megh-bari/Netflix-Clone/assets/142393952/b43b6e2f-b3bc-4e31-bc94-698d8def267f)

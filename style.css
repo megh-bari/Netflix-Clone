@@ -562,6 +562,11 @@ footer .questions {
     width: 183px;
     left: 58px;
   }
+
+  .faq h2{
+    font-size: 30px;
+  }
+
   .faq-box {
     max-width: 80%;
     font-size: 18px;
@@ -653,7 +658,9 @@ footer .questions {
     top: 30%;
     width: 50%;
   }
-
+  .faq h2{
+    font-size: 25px;
+  }
   .nav-btn {
     justify-content: center;
     margin-top: 10px;
@@ -701,6 +708,10 @@ footer .questions {
     font-size: 14px;
   }
 
+  .faq h2{
+    font-size: 25px;
+  }
+  
   nav button {
     height: 40px;
   }
