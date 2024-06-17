@@ -307,7 +307,7 @@ p {
 }
 
 .hero-2 input::placeholder {
-  font-size: 16px; /* Adjust placeholder font size */
+  font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -403,340 +403,320 @@ footer .questions {
 
 /* Responsive Design */
 
+/* Styles for screens up to 1200px */
 @media screen and (max-width: 1200px) {
   .main {
-    height: 700px;
-    position: relative;
-    background-size: max(1350px, 100vw);
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 600px;
   }
+
   .first {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-right: 140px;
-    width: 80vw;
-    height: 50vh;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    position: relative;
   }
 
   .first > div {
-    flex: 1;
+    text-align: center; /* Add this line */
   }
 
   .sec-img img {
-    z-index: 51;
-    position: absolute;
-    top: -140px;
-    right: -50px;
     width: 400px;
   }
 
   .sec-img video {
-    position: absolute;
-    top: -80px;
-    right: -3px;
     width: 300px;
   }
-
-  .second {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .second > div > span:first-child {
-    font-size: 40px;
-    white-space: normal;
-  }
-
-  .second > .sec-img img {
-    z-index: 51;
-    position: absolute;
-    top: -140px;
-    right: 150px;
-    width: 400px;
-  }
-
-  .second > .sec-img video {
-    position: absolute;
-    top: -80px;
-    right: -3px;
-    width: 300px;
-  }
-
-  .third {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .third > .sec-img img {
-    z-index: 51;
-    position: absolute;
-    top: -100px;
-    right: -110px;
-    width: 400px;
-  }
-
   section.third .sec-img video {
     position: absolute;
-    top: -80px;
-    right: -30px;
-    width: 250px;
-  }
-
-  .fourth > .sec-img img {
-    z-index: 51;
-    position: absolute;
-    top: -100px;
-    right: 120px;
-    width: 380px;
-  }
-  section.fourth {
-    position: relative;
-    left: 80px;
+    top: 52px;
+    right: 52px;
+    width: 200px;
   }
 }
 
+/* Styles for screens up to 1024px */
 @media screen and (max-width: 1024px) {
   .main {
-    height: 700px;
-    position: relative;
-    background-size: max(1350px, 90vw);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .first {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-right: 140px;
-    width: 80vw;
-    height: 60vh;
-  }
-
-  .group {
-    text-align: center;
-  }
-
-  section.second > .sec-img {
-    position: relative;
-    left: 100px;
-  }
-
-  section.fourth > .sec-img {
-    position: relative;
-    right: 0;
-  }
-  .section.first > div {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 770px) {
-  .first {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-right: 140px;
-    width: 80vw;
-    height: 70vh;
-  }
-  section.second > .sec-img {
-    position: relative;
-    left: 30%;
-  }
-  section.second > div {
-    position: relative;
-    left: 15%;
-  }
-
-  section.fourth > .sec-img {
-    position: relative;
-    right: -10%;
-  }
-
-  section.third > .sec-img {
-    position: relative;
-    left: 10%;
-  }
-  section.third {
-    position: relative;
-    left: -5%;
-    gap: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .main {
-    background-image: url(assets/Images/bg.jpg);
     height: 500px;
-    position: relative;
-    background-size: max(900px);
-    background-position: center;
-    background-repeat: no-repeat;
   }
-  .hero {
-    font-family: "Martel Sans", sans-serif;
-    height: calc(100% - 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    position: relative;
-  }
+
   .hero > :nth-child(1) {
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    font-size: 18px;
-    text-align: center;
+    font-size: 36px;
   }
 
   .hero > :nth-child(2) {
-    font-size: 16px;
-    font-weight: 200;
-    text-align: center;
+    font-size: 20px;
   }
 
   .hero > :nth-child(3) {
-    font-size: 10px;
-    font-weight: 200;
-    text-align: center;
-  }
-  .input-group {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* flex-direction: column; */
-  }
-  .hero input {
-    width: 60%;
-    height: 30%;
-  }
-  .select-wrapper {
-    max-width: 120px;
-  }
-  .btn-red {
-    width: 100px;
-    font-size: 10px;
-    line-height: 2;
-  }
-  .nav-btn {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-    /* top: 30px; */
-    gap: 10px;
-  }
-
-  nav {
-    max-width: 95vw;
-  }
-  .first {
-    height: 80vh;
-    position: relative;
-    left: -8%;
-  }
-
-  section.first > div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 10;
-    /* margin-top: -300px; */
-    left: 80px;
-  }
-
-  section.first > div {
-    font-size: 40px;
-    font-weight: bolder;
-    white-space: nowrap;
-}
-
-  section.first > div:first-child {
-    position: absolute;
-    height: 460px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    font-size: 16px;
   }
 
   .sec-img img {
-    z-index: 51;
-    position: absolute;
-    top: -30px;
-    right: -85px;
     width: 350px;
   }
 
   .sec-img video {
-    position: absolute;
-    top: 24px;
-    right: -35px;
-    width: 255px;
-  }
-
-  .hero-2 .input {
-    width: 70%;
-    height: 0vh;
-  }
-
-  .input-group-2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 12px;
-  }
-  section.second{
-    height: 100vh;
-    
-  }
-  section.second > div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 10;
-    margin-top: -300px;
-    left: 70px;
-  }
-
-  .second > .sec-img img {
-    position: relative;
-    top: 350px;
-    left: -100px;
-    width: 400px;
-    z-index: 10;
-  }
-
-  /* footer responsive design for 430px */
-  .footer {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    color: rgba(255, 255, 255, 0.7);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-  }
-  .footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: start;
-    align-items: self-start;
-    align-self: self-start;
+    width: 250px;
   }
 }
+
+/* Styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .main {
+    height: 400px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .input-group input[type="text"] {
+    width: 140%;
+    font-size: 16px;
+    height: 50%;
+  }
+
+  .input-group .btn {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .hero-2 .input-group .btn-red {
+    line-height: 2.5;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 28px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .sec-img img {
+    width: 300px;
+  }
+
+  .sec-img video {
+    width: 200px;
+  }
+
+  .faq-box {
+    max-width: 90%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Styles for screens up to 480px */
+@media screen and (max-width: 480px) {
+  .main {
+    height: 500px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 24px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 14px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 12px;
+  }
+
+  .sec-img img {
+    width: 300px;
+  }
+
+  .sec-img video {
+    width: 150px;
+  }
+
+  .first .sec-img video {
+    width: 250px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+  }
+  section.third .sec-img video {
+    position: absolute;
+    top: 52px;
+    width: 183px;
+    left: 58px;
+  }
+  .faq-box {
+    max-width: 80%;
+    font-size: 18px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input,
+  .input-group-2 input {
+    width: 100%;
+  }
+
+  .btn-red {
+    width: 100%;
+  }
+
+  nav {
+    max-width: 90vw;
+  }
+
+  .select-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    max-width: 150px;
+  }
+
+  .language-select {
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px;
+    border-radius: 4px;
+    z-index: 1;
+    width: 55px;
+  }
+
+  .language-icon {
+    position: absolute;
+    right: 8px;
+    top: 25%;
+    transform: translateX(-15%);
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Styles for screens up to 380px */
+@media screen and (max-width: 380px) {
+  .main {
+    height: 500px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 24px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 14px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 12px;
+  }
+
+  nav {
+    max-width: 70vw;
+  }
+
+  nav img {
+    right: 164px;
+    position: absolute;
+    top: 30%;
+    width: 50%;
+  }
+
+  .nav-btn {
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: -40px;
+  }
+
+  .language-select {
+    padding: 10px 25px;
+  }
+
+  .input-group input[type="text"] {
+    width: 90%;
+    font-size: 16px;
+    height: 50%;
+  }
+}
+
+/* Styles for screens up to 330px */
+  @media screen and (max-width: 330px) {
+    .main {
+      width: 100vw;
+    }
+  
+    nav {
+      max-width: 70vw;
+    }
+  
+    nav img {
+      right: 150px;
+      width: 50%;
+      position: absolute;
+      top: 35%;
+  }
+    .nav-btn {
+      position: relative;
+      left: -20px;
+    }
+  
+    nav button {
+      height: 40px;
+    }
+  
+    .btn-red-sm {
+      height: 40px;
+      font-size: 16px;
+      padding: 0 10px;
+      line-height: 16px;
+      width: 80px; /* Added fixed width */
+      white-space: nowrap; /* Prevent text wrapping */
+      overflow: hidden; /* Hide overflowing text */
+      text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    }
+  }
+
+  /* @media screen and (max-width: 360px){
+    .main {
+      width: 100vw;
+    }
+  
+    nav {
+      max-width: 70vw;
+    }
+    nav img {
+      right: 20px;
+      width: 70%;
+    }
+    nav button {
+      height: 40px;
+    }
+  
+    .btn-red-sm {
+      height: 40px;
+      font-size: 16px;
+      padding: 0 10px;
+      line-height: 16px;
+      width: 75px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+    }
+  }
+   */
