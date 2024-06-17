@@ -524,7 +524,7 @@ footer .questions {
   }
 
   .hero > :nth-child(1) {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .hero > :nth-child(2) {
@@ -534,7 +534,14 @@ footer .questions {
   .hero > :nth-child(3) {
     font-size: 12px;
   }
+  section.first > div :nth-child(1) {
+    font-size: 28px;
+    font-weight: bolder;
+  }
 
+  section.first > div :nth-child(2) {
+    font-size: 14px;
+  }
   .sec-img img {
     width: 300px;
   }
@@ -627,6 +634,15 @@ footer .questions {
     font-size: 12px;
   }
 
+  section.first > div :nth-child(1) {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 14px;
+  }
+
   nav {
     max-width: 70vw;
   }
@@ -656,43 +672,52 @@ footer .questions {
 }
 
 /* Styles for screens up to 330px */
-  @media screen and (max-width: 330px) {
-    .main {
-      width: 100vw;
-    }
-  
-    nav {
-      max-width: 70vw;
-    }
-  
-    nav img {
-      right: 150px;
-      width: 50%;
-      position: absolute;
-      top: 35%;
-  }
-    .nav-btn {
-      position: relative;
-      left: -20px;
-    }
-  
-    nav button {
-      height: 40px;
-    }
-  
-    .btn-red-sm {
-      height: 40px;
-      font-size: 16px;
-      padding: 0 10px;
-      line-height: 16px;
-      width: 80px; /* Added fixed width */
-      white-space: nowrap; /* Prevent text wrapping */
-      overflow: hidden; /* Hide overflowing text */
-      text-overflow: ellipsis; /* Show ellipsis for overflowing text */
-    }
+@media screen and (max-width: 330px) {
+  .main {
+    width: 100vw;
   }
 
-  /* @media screen and (max-width: 360px){
+  nav {
+    max-width: 70vw;
+  }
+
+  nav img {
+    right: 150px;
+    width: 50%;
+    position: absolute;
+    top: 35%;
+  }
+  .nav-btn {
+    position: relative;
+    left: -20px;
+  }
+
+  section.first > div :nth-child(1) {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 14px;
+  }
+
+  nav button {
+    height: 40px;
+  }
+
+  .btn-red-sm {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 16px;
+    width: 80px; /* Added fixed width */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  }
+}
+
+/* @media screen and (max-width: 360px){
     .main {
       width: 100vw;
     }
@@ -719,4 +744,3 @@ footer .questions {
       text-overflow: ellipsis; 
     }
   } */
-  
